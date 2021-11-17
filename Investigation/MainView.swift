@@ -14,6 +14,7 @@ struct MainView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Spacer()
                 Text("Investigation")
                     .font(.title)
                     .fontWeight(.bold)
@@ -22,10 +23,9 @@ struct MainView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 NavigationLink(destination: CasesView(), isActive: $isShowingCases) {EmptyView()}
+                    Spacer()
                     Button(action: {
                         self.isShowingCases = true
-                        print("Button Tapped")
-                        
                     }) {
                         Text("PLAY")
                             .font(.title)
@@ -35,6 +35,7 @@ struct MainView: View {
                             .background(.blue)
                             .cornerRadius(10)
                     }
+                Spacer()
                 }
             }
         }
