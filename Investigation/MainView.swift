@@ -23,7 +23,6 @@ struct MainView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                 NavigationLink(destination: CasesView(), isActive: $isShowingCases) {EmptyView()}
-                    Spacer()
                     Button(action: {
                         self.isShowingCases = true
                     }) {

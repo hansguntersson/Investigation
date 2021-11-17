@@ -10,40 +10,93 @@ import SwiftUI
 struct CaseMainView: View {
     var body: some View {
         
-        VStack (alignment: .leading, spacing: 10) {
-            Text("Locations")
-                .font(.headline)
-                .padding(10)
-            
-            List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { Case in
-                HStack {
-                    Text("ID 4876")
-                        .fontWeight(.bold)
-                    Text("Theft Site")
-                }
-            }
-            
-        }.navigationBarTitle("Case #4675: Moped Theft", displayMode: .inline)
-        
-        
         TabView {
-            ItemListView()
-                .tabItem {
-                    Label("Locations", systemImage: "location")
+            
+            // -------- LOCATIONS---------
+            
+            VStack (alignment: .leading, spacing: 10) {
+                Text("Locations")
+                    .font(.headline)
+                    .padding(10)
+                
+                List(0 ..< 2) { Case in
+                    HStack {
+                        Text("ID 4876")
+                            .fontWeight(.bold)
+                        Text("Theft Site")
+                    }
                 }
-            ItemListView()
+                
+            }.navigationBarTitle("Case #4675: Moped Theft", displayMode: .inline)
                 .tabItem {
-                    Label("Evidence", systemImage: "magnifyingglass")
+                    Image(systemName: "location")
+                    Text("Locations")
+                }.tag(1)
+            
+            // -------- EVIDENCE---------
+            
+            VStack (alignment: .leading, spacing: 10) {
+                Text("Evidence")
+                    .font(.headline)
+                    .padding(10)
+                
+                List(0 ..< 2) { Case in
+                    HStack {
+                        Text("ID 4876")
+                            .fontWeight(.bold)
+                        Text("Glass Fragments")
+                    }
                 }
-            ItemListView()
+                
+            }.navigationBarTitle("Case #4675: Moped Theft", displayMode: .inline)
                 .tabItem {
-                    Label("People", systemImage: "person")
+                    Image(systemName: "magnifyingglass")
+                    Text("Evidence")
+                }.tag(2)
+            
+            // -------- PEOPLE---------
+            
+            VStack (alignment: .leading, spacing: 10) {
+                Text("People")
+                    .font(.headline)
+                    .padding(10)
+                
+                List(0 ..< 2) { Case in
+                    HStack {
+                        Text("ID 4256")
+                            .fontWeight(.bold)
+                        Text("Alan Parker")
+                    }
                 }
-            ItemListView()
+                
+            }.navigationBarTitle("Case #4675: Moped Theft", displayMode: .inline)
                 .tabItem {
-                    Label("Resources", systemImage: "keyboard")
+                    Image(systemName: "person")
+                    Text("People")
+                }.tag(3)
+            
+            // -------- Resources---------
+            
+            VStack (alignment: .leading, spacing: 10) {
+                Text("Resources")
+                    .font(.headline)
+                    .padding(10)
+                
+                List(0 ..< 2) { Case in
+                    HStack {
+                        Text("ID 3355")
+                            .fontWeight(.bold)
+                        Text("Forensics")
+                    }
                 }
-        }.padding(10)
+                
+            }.navigationBarTitle("Case #4675: Moped Theft", displayMode: .inline)
+                .tabItem {
+                    Image(systemName: "keyboard")
+                    Text("Resources")
+                }.tag(3)
+            
+        }
     }
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E53584EC2743C28100DDAB33 /* CasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53584EB2743C28100DDAB33 /* CasesView.swift */; };
-		E53A876C2745A9A7006C611B /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53A876B2745A9A7006C611B /* ItemListView.swift */; };
 		E5BA1C352743B6DC00CE1DF4 /* InvestigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA1C342743B6DC00CE1DF4 /* InvestigationApp.swift */; };
 		E5BA1C372743B6DC00CE1DF4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA1C362743B6DC00CE1DF4 /* MainView.swift */; };
 		E5BA1C392743B6DD00CE1DF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5BA1C382743B6DD00CE1DF4 /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 
 /* Begin PBXFileReference section */
 		E53584EB2743C28100DDAB33 /* CasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesView.swift; sourceTree = "<group>"; };
-		E53A876B2745A9A7006C611B /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
 		E5BA1C312743B6DC00CE1DF4 /* Investigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Investigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BA1C342743B6DC00CE1DF4 /* InvestigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestigationApp.swift; sourceTree = "<group>"; };
 		E5BA1C362743B6DC00CE1DF4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				E5BA1C362743B6DC00CE1DF4 /* MainView.swift */,
 				E53584EB2743C28100DDAB33 /* CasesView.swift */,
 				E5DEDA5A274578DF00356F8F /* CaseMainView.swift */,
-				E53A876B2745A9A7006C611B /* ItemListView.swift */,
 				E5BA1C382743B6DD00CE1DF4 /* Assets.xcassets */,
 				E5BA1C3D2743B6DD00CE1DF4 /* Persistence.swift */,
 				E5BA1C3F2743B6DD00CE1DF4 /* Investigation.xcdatamodeld */,
@@ -158,7 +155,6 @@
 				E5BA1C412743B6DD00CE1DF4 /* Investigation.xcdatamodeld in Sources */,
 				E5DEDA5B274578DF00356F8F /* CaseMainView.swift in Sources */,
 				E5BA1C352743B6DC00CE1DF4 /* InvestigationApp.swift in Sources */,
-				E53A876C2745A9A7006C611B /* ItemListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
