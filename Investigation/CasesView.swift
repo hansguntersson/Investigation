@@ -22,7 +22,7 @@ struct CasesView: View {
     @State private var isShowingContents = false
     
     var body: some View {
-        VStack (alignment: .leading, spacing: 10) {
+        VStack (alignment: .leading, spacing: 5) {
             List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { Case in
                 NavigationLink(destination: CaseMainView()) {
                     HStack {

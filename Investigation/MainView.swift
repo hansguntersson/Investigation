@@ -13,15 +13,15 @@ struct MainView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack (spacing: 10) {
                 Spacer()
                 Text("Investigation")
                     .font(.title)
                     .fontWeight(.bold)
-                    .padding()
                 Text("A modern detective game where you solve cases using evidence, testimony and logic.")
                     .multilineTextAlignment(.center)
-                    .padding()
+                    .padding(10)
+                    .padding(.bottom, 20)
                 NavigationLink(destination: CasesView(), isActive: $isShowingCases) {EmptyView()}
                     Button(action: {
                         self.isShowingCases = true
@@ -34,6 +34,8 @@ struct MainView: View {
                             .background(.blue)
                             .cornerRadius(10)
                     }
+                Spacer()
+                Spacer()
                 Spacer()
                 }
             }
