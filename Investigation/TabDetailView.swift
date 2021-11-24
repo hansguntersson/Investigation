@@ -7,60 +7,76 @@
 
 import SwiftUI
 
-struct Bookmark: Identifiable, Hashable {
-    let id = UUID()
+struct ListItem: Identifiable {
+    let id: Int
     let name: String
-    let icon: String
-    var items: [Bookmark]?
-
-    // some example websites
-    static let apple = Bookmark(name: "Apple", icon: "1.circle")
-    static let bbc = Bookmark(name: "BBC", icon: "square.and.pencil")
-    static let swift = Bookmark(name: "Swift", icon: "bolt.fill")
-    static let twitter = Bookmark(name: "Twitter", icon: "mic")
-
-    // some example groups
-    static let example1 = Bookmark(name: "Favorites", icon: "star", items: [Bookmark.apple, Bookmark.bbc])
-    static let example2 = Bookmark(name: "Recent", icon: "timer", items: [Bookmark.apple, Bookmark.bbc, Bookmark.swift, Bookmark.twitter])
+    let description: String
+    var visible: Bool
 }
 
+let TestItem = ListItem(id: 1, name: "Test Item", description: "Test Description", visible: false)
+let TestItem2 = ListItem(id: 2, name: "Test Item 2", description: "Test Description 3", visible: false)
+let TestItem3 = ListItem(id: 3, name: "Test Item 3", description: "Test Description 3", visible: false)
+
 struct TabDetailView: View {
-    
-    let items: [Bookmark] = [.example1, .example2]
+    let CaseItem: CaseItem
     
     var body: some View {
-        VStack (alignment: .leading, spacing: 10) {
-            Text("Location ID 4876: Theft Site")
-                .font(.headline)
-                .padding(10)
-            Text("Select details about the location to investigate further")
-                .padding(.horizontal, 10)
-                .padding(.vertical, 5)
-            List(items, children: \.items) { row in
-                HStack {
-                    Image(systemName: "folder.fill")
-                    Text("ID #55889: ")
-                        .fontWeight(.bold)
-                    Text("Tyre Marks")
-                }.padding(3)
-            }
+        let items: [ListItem] = [TestItem, TestItem2, TestItem3]
+        let ItemSelection = CaseItem.itemtype
+        
+        TabView {
+    
+            // LOCATIONS
+            VStack (alignment: .leading, spacing: 10) {
+                Text(CaseItem.title)
+                    .font(.headline)
+                    .padding(10)
+                Text(CaseItem.description)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 5)
+                List(items) { row in
+                    HStack {
+                        Text(row.name)
+                            .fontWeight(.bold)
+                        Text(row.description)
+                    }.padding(3)
+                }
                 
+                HStack {
+                    Spacer()
+                    Text(ButtonTextSwitcher(ItemInput: ItemSelection))
+                            .font(.subheadline)
+                            .fontWeight(.bold)
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(.green)
+                            .cornerRadius(5)
+                            .onTapGesture {print("Location tap")}
+                    Spacer()
+                }
+            }
+        }
+    }
+}
 
-        }.navigationBarTitle("#4675: Moped Theft", displayMode: .inline)
-        Text("SEARCH")
-        .font(.subheadline)
-        .fontWeight(.bold)
-        .padding()
-        .foregroundColor(.white)
-        .background(.green)
-        .cornerRadius(5)
-        .onTapGesture {print("Selected id")}
+func ButtonTextSwitcher(ItemInput: itemtypekey) -> String {
+    var itemprompt: String
+    
+    switch ItemInput {
+    case .Location:
+        itemprompt = "SEARCH LOCATION"
+    case .Evidence:
+        itemprompt = "EXAMINE EVIDENCE"
+    case .Person:
+        itemprompt = "INTERVIEW PERSON"
     }
     
+    return itemprompt
 }
 
 struct TabDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TabDetailView()
+        TabDetailView(CaseItem: CaseItem(id: 1, code: "4489", title: "Theft site", description: "The site of the theft", itemtype: .Location))
     }
 }
