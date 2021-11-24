@@ -14,7 +14,7 @@ struct ListItem: Identifiable {
     var visible: Bool
 }
 
-let TestItem = ListItem(id: 1, name: "Test Item", description: "Test Description", visible: false)
+let TestItem = ListItem(id: 1, name: "Test Item", description: "Test Description", visible: true)
 let TestItem2 = ListItem(id: 2, name: "Test Item 2", description: "Test Description 3", visible: false)
 let TestItem3 = ListItem(id: 3, name: "Test Item 3", description: "Test Description 3", visible: false)
 
@@ -64,12 +64,12 @@ func ButtonTextSwitcher(ItemInput: itemtypekey) -> String {
     var itemprompt: String
     
     switch ItemInput {
-    case .Location:
-        itemprompt = "SEARCH LOCATION"
-    case .Evidence:
-        itemprompt = "EXAMINE EVIDENCE"
-    case .Person:
-        itemprompt = "INTERVIEW PERSON"
+        case .Location:
+            itemprompt = "SEARCH LOCATION"
+        case .Evidence:
+            itemprompt = "EXAMINE EVIDENCE"
+        case .Person:
+            itemprompt = "INTERVIEW PERSON"
     }
     
     return itemprompt
