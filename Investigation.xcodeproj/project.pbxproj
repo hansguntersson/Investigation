@@ -82,10 +82,10 @@
 				E5DEDA5A274578DF00356F8F /* CaseMainView.swift */,
 				E512822827467B7500B5DEFA /* TabDetailView.swift */,
 				E574C482274EC27700E14DA1 /* DataView.swift */,
+				E5BA1C3F2743B6DD00CE1DF4 /* Investigation.xcdatamodeld */,
 				E5130D602753E5E500199FD6 /* Data sets */,
 				E5BA1C382743B6DD00CE1DF4 /* Assets.xcassets */,
 				E5BA1C3D2743B6DD00CE1DF4 /* Persistence.swift */,
-				E5BA1C3F2743B6DD00CE1DF4 /* Investigation.xcdatamodeld */,
 				E5BA1C3A2743B6DD00CE1DF4 /* Preview Content */,
 			);
 			path = Investigation;

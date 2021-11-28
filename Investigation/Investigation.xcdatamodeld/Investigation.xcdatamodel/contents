@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
+    <entity name="Resource" representedClassName="Resource" syncable="YES" codeGenerationType="class">
+        <attribute name="blurb" optional="YES" attributeType="String"/>
+        <attribute name="code" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="subresource" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubResource" inverseName="resource" inverseEntity="SubResource"/>
+    </entity>
+    <entity name="SubResource" representedClassName="SubResource" syncable="YES" codeGenerationType="class">
+        <attribute name="blurb" optional="YES" attributeType="String"/>
+        <attribute name="code" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="resource" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Resource" inverseName="subresource" inverseEntity="Resource"/>
+    </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Resource" positionX="-63" positionY="-9" width="128" height="103"/>
+        <element name="SubResource" positionX="-267.7240600585938" positionY="210.4205627441406" width="128" height="103"/>
+        <element name="Item" positionX="-144" positionY="162" width="128" height="44"/>
     </elements>
 </model>

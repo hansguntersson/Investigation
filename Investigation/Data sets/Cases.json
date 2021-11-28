@@ -1,5 +1,34 @@
 {
+    "Cases": [
+    {
+        "ID": "1",
+        "Code": "Text",
+        "Title": "Text",
+        "Description": "Text",
+        "Caseitems": [
+            {
+                "ID": "1",
+                "Code": "Text",
+                "Title": "Text",
+                "Description": "Text",
+                "ItemType": "Location",
+                "Visible": "False",
+                "New": "False",
+                "CaseItemDetails": [
+                    {
+                        "ID": "1",
+                        "Code": "Text",
+                        "Title": "Text",
+                        "Description": "Text",
+                        "Visible": "False",
+                        "New": "False"
+                    }
+                ]
+            }
+        ]
+    },
     
-    
-    
+    {
+        
+    }]
 }

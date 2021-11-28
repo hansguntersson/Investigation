@@ -1,14 +1,15 @@
-
-{ "Resources": [
+{
+    "Resources": [
     {
         "Title" : "Biological",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Medical Examination / Autopsy"},
             {"Title": "DNA extraction & analysis"},
             {"Title": "Dental analysis"},
-            {"Title": "Blood & spatter analysis"},
+            {"Title": "Blood & Blood spatter analysis"},
             {"Title": "Decomposition & Entomology analysis"},
-            {"Title": "Bone & Hair analysis"}
+            {"Title": "Bone & Hair analysis"},
             {"Title": "Facial reconstruction"},
             {"Title": "Brain scans"},
             {"Title": "Plant and seed analysis"}
@@ -16,11 +17,12 @@
     },
 
     {
-        "Resource" : "Digital Forensics",
+        "Title" : "Digital Forensics",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Internet Tracing"},
             {"Title": "Decryption"},
-            {"Title": "Video & Photo analysis"}
+            {"Title": "Video & Photo analysis"},
             {"Title": "Online activity analysis"},
             {"Title": "Locational tracking & Analysis"},
             {"Title": "Financial and fraud analysis"},
@@ -30,18 +32,21 @@
     },
     
     {
-        "Resource" : "Physical & Chemical Forensics",
+        "Title" : "Physical & Chemical Forensics",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Carbon dating"},
             {"Title": "Ballistics & Bullet analysis"},
             {"Title": "Chemical & Material analysis"},
             {"Title": "Explosion & Fire analysis"},
-            {"Title": "Handwriting analysis"},
+            {"Title": "Tyre Mark & Vehicle analysis"},
+            {"Title": "Handwriting analysis"}
         ]
     },
     
     {
-        "Resource" : "Psychological Forensics",
+        "Title" : "Psychological Forensics",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Psychological profiling"},
             {"Title": "Lie detection/Polygraph"},
@@ -50,7 +55,8 @@
     },
     
     {
-        "Resource" : "Police Services",
+        "Title" : "Police Services",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Line up identification"},
             {"Title": "Sketch artist"},
@@ -59,11 +65,13 @@
             {"Title": "Police surveillance"},
             {"Title": "Press / Public appeal"},
             {"Title": "Tracking services"},
+            {"Title": "Fingerprint capture"}
         ]
     },
     
     {
-        "Resource" : "Research Services",
+        "Title" : "Research Services",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Medical/Insurance record research"},
             {"Title": "Employment/Tax record research"},
@@ -74,7 +82,8 @@
     },
     
     {
-        "Resource" : "Registers & Databanks",
+        "Title" : "Registers & Databanks",
+        "Description": "Text",
         "Sub-resources" : [
             {"Title": "Government citizen register"},
             {"Title": "Immigration register"},
@@ -89,7 +98,5 @@
             {"Title": "Vehicle Licencing databank"},
             {"Title": "Firearm Licencing databank"}
         ]
-    }
-    
-]
+    }]
 }
