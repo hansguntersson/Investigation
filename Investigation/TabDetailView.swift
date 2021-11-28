@@ -24,12 +24,13 @@ struct TabDetailView: View {
     var body: some View {
         let items: [ListItem] = [TestItem, TestItem2, TestItem3]
         let ItemSelection = CaseItem.itemtype
+        let ItemString = "\(ItemSelection): \(CaseItem.title)"
         
         TabView {
     
             // LOCATIONS
             VStack (alignment: .leading, spacing: 10) {
-                Text(CaseItem.title)
+                Text(ItemString)
                     .font(.headline)
                     .padding(10)
                 Text(CaseItem.description)
@@ -52,7 +53,7 @@ struct TabDetailView: View {
                             .foregroundColor(.white)
                             .background(.green)
                             .cornerRadius(5)
-                            .onTapGesture {print("Location tap")}
+                            .onTapGesture {print("\(ItemSelection) tap")}
                     Spacer()
                 }
             }
@@ -77,6 +78,6 @@ func ButtonTextSwitcher(ItemInput: itemtypekey) -> String {
 
 struct TabDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        TabDetailView(CaseItem: CaseItem(id: 1, code: "4489", title: "Theft site", description: "The site of the theft", itemtype: .Location))
+        TabDetailView(CaseItem: CaseItem(id: 1, code: "4489", title: "Theft site", description: "The site of the theft", itemtype: .Location, visible: false))
     }
 }

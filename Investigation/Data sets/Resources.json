@@ -1,0 +1,95 @@
+
+{ "Resources": [
+    {
+        "Title" : "Biological",
+        "Sub-resources" : [
+            {"Title": "Medical Examination / Autopsy"},
+            {"Title": "DNA extraction & analysis"},
+            {"Title": "Dental analysis"},
+            {"Title": "Blood & spatter analysis"},
+            {"Title": "Decomposition & Entomology analysis"},
+            {"Title": "Bone & Hair analysis"}
+            {"Title": "Facial reconstruction"},
+            {"Title": "Brain scans"},
+            {"Title": "Plant and seed analysis"}
+        ]
+    },
+
+    {
+        "Resource" : "Digital Forensics",
+        "Sub-resources" : [
+            {"Title": "Internet Tracing"},
+            {"Title": "Decryption"},
+            {"Title": "Video & Photo analysis"}
+            {"Title": "Online activity analysis"},
+            {"Title": "Locational tracking & Analysis"},
+            {"Title": "Financial and fraud analysis"},
+            {"Title": "Forgery analysis"},
+            {"Title": "Aerial Photography"}
+        ]
+    },
+    
+    {
+        "Resource" : "Physical & Chemical Forensics",
+        "Sub-resources" : [
+            {"Title": "Carbon dating"},
+            {"Title": "Ballistics & Bullet analysis"},
+            {"Title": "Chemical & Material analysis"},
+            {"Title": "Explosion & Fire analysis"},
+            {"Title": "Handwriting analysis"},
+        ]
+    },
+    
+    {
+        "Resource" : "Psychological Forensics",
+        "Sub-resources" : [
+            {"Title": "Psychological profiling"},
+            {"Title": "Lie detection/Polygraph"},
+            {"Title": "Psychological evaluation"}
+        ]
+    },
+    
+    {
+        "Resource" : "Police Services",
+        "Sub-resources" : [
+            {"Title": "Line up identification"},
+            {"Title": "Sketch artist"},
+            {"Title": "Undercover network"},
+            {"Title": "Event reconstruction / Re-enactment"},
+            {"Title": "Police surveillance"},
+            {"Title": "Press / Public appeal"},
+            {"Title": "Tracking services"},
+        ]
+    },
+    
+    {
+        "Resource" : "Research Services",
+        "Sub-resources" : [
+            {"Title": "Medical/Insurance record research"},
+            {"Title": "Employment/Tax record research"},
+            {"Title": "Newspaper record research"},
+            {"Title": "Manufacturer / Product research"},
+            {"Title": "Geneology research"}
+        ]
+    },
+    
+    {
+        "Resource" : "Registers & Databanks",
+        "Sub-resources" : [
+            {"Title": "Government citizen register"},
+            {"Title": "Immigration register"},
+            {"Title": "Criminal register"},
+            {"Title": "Terror register"},
+            {"Title": "Hospitality register"},
+            {"Title": "DNA databank"},
+            {"Title": "Death record databank"},
+            {"Title": "Fingerprint databank"},
+            {"Title": "Dental record databank"},
+            {"Title": "UV & Microstamping databank"},
+            {"Title": "Vehicle Licencing databank"},
+            {"Title": "Firearm Licencing databank"}
+        ]
+    }
+    
+]
+}

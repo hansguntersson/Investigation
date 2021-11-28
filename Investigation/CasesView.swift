@@ -7,12 +7,7 @@
 
 import SwiftUI
 
-
-
-
 struct CasesView: View {
-    
-    let cases = [case1, case2, case3]
     
     var body: some View {
         VStack (alignment: .leading, spacing: 10) {
