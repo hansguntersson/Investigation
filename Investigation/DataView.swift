@@ -46,24 +46,21 @@ struct CaseItemDetail: Hashable, Identifiable, Codable {
 
 // RESOURCES
 
-/*
-
-struct Resource: Identifiable, Codable {
+struct CaseResource: Identifiable, Codable {
     let id: Int
     var code: String
     let title: String
     let description: String
-    let subresources: [SubResource]
+    let subresources: [CaseSubResource]
 }
 
-struct SubResource: Identifiable, Codable {
+struct CaseSubResource: Identifiable, Codable {
     let id: Int
     var code: String
     let title: String
     let description: String
 }
- 
- */
+
 
 // ------------------------------------ DATA ------------------------------------ //
 
@@ -72,11 +69,24 @@ struct SubResource: Identifiable, Codable {
 let cases = [case1, case2, case3]
 
 // CASES
-let case1 = Case(id: 1, code: "4675", title: "Moped Theft", description: "A pedestrian has been robbed by assailants on a moped", caseitems: [caseitem1, caseitem2, caseitem3, caseitem4])
-
-let case2 = Case(id: 2, code: "3378", title: "Missing Teenager", description: "A teenager has gone missing from their home", caseitems: [])
-
-let case3 = Case(id: 3, code: "5598", title: "Shallow grave", description: "Remains have been found in a shallow grave in the woods", caseitems: [])
+let case1 = Case(
+    id: 1,
+    code: "4675",
+    title: "Moped Theft",
+    description: "A pedestrian has been robbed by assailants on a moped",
+    caseitems: [caseitem1, caseitem2, caseitem3, caseitem4])
+let case2 = Case(
+    id: 2,
+    code: "3378",
+    title: "Missing Teenager",
+    description: "A teenager has gone missing from their home",
+    caseitems: [])
+let case3 = Case(
+    id: 3,
+    code: "5598",
+    title: "Shallow grave",
+    description: "Remains have been found in a shallow grave in the woods",
+    caseitems: [])
 
 // CASE ITEMS
 let caseitem1 = CaseItem(
@@ -114,12 +124,53 @@ let caseitem4 = CaseItem(
     new: true,
     caseitemdetails: [caseitemdetail5, caseitemdetail6])
 
-
 // CASE ITEM DETAILS
-let caseitemdetail1 = CaseItemDetail(id: 1, code: "7789", title: "Skid marks", description: "Marks in  the road from tyres", visible: false, new: true)
-let caseitemdetail2 = CaseItemDetail(id: 2, code: "5533", title: "Kerb damage", description: "Damage to the kerb from impact", visible: false, new: true)
-let caseitemdetail3 = CaseItemDetail(id: 3, code: "6675", title: "Age", description: "42 years of age", visible: false, new: true)
-let caseitemdetail4 = CaseItemDetail(id: 4, code: "8897", title: "Profession", description: "Investment banker", visible: false, new: true)
-let caseitemdetail5 = CaseItemDetail(id: 5, code: "3377", title: "Age", description: "65 years of  age", visible: false, new: true)
-let caseitemdetail6 = CaseItemDetail(id: 6, code: "7879", title: "Profession", description: "Local shopkeeper", visible: false, new: true)
-let caseitemdetail7 = CaseItemDetail(id: 7, code: "8789", title: "Bag tag", description: "Tag with manufacturer ID", visible: false, new: true)
+let caseitemdetail1 = CaseItemDetail(
+    id: 1,
+    code: "7789",
+    title: "Skid marks",
+    description: "Marks in  the road from tyres",
+    visible: false,
+    new: true)
+let caseitemdetail2 = CaseItemDetail(
+    id: 2,
+    code: "5533",
+    title: "Kerb damage",
+    description: "Damage to the kerb from impact",
+    visible: false,
+    new: true)
+let caseitemdetail3 = CaseItemDetail(
+    id: 3,
+    code: "6675",
+    title: "Age",
+    description: "42 years of age",
+    visible: false,
+    new: true)
+let caseitemdetail4 = CaseItemDetail(
+    id: 4,
+    code: "8897",
+    title: "Profession",
+    description: "Investment banker",
+    visible: false,
+    new: true)
+let caseitemdetail5 = CaseItemDetail(
+    id: 5,
+    code: "3377",
+    title: "Age",
+    description: "65 years of  age",
+    visible: false,
+    new: true)
+let caseitemdetail6 = CaseItemDetail(
+    id: 6,
+    code: "7879",
+    title: "Profession",
+    description: "Local shopkeeper",
+    visible: false,
+    new: true)
+let caseitemdetail7 = CaseItemDetail(
+    id: 7,
+    code: "8789",
+    title: "Bag tag",
+    description: "Tag with manufacturer ID",
+    visible: false,
+    new: true)
